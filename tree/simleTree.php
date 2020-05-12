@@ -61,7 +61,57 @@ class Tree
 
         return $node;
     }
-    
+
+    public function levelOrderWithDFS($root)
+    {
+        if (empty($root)) {
+            return [];
+        }
+        $result = [];
+        $this->iteratorLevel($result, $root, 0);
+
+        return $result;
+    }
+
+    public function iteratorLevel(&$result, $node, $level)
+    {
+        if (empty($node)) {
+            return;
+        }
+        if(count($result) < $level+1){
+            array_push($result,[]); //说明当前行没有结果，需要初始化
+        }
+
+        array_push($result[$level], $node->value);
+
+        $this->iteratorLevel($result, $node->left, $level+1);
+        $this->iteratorLevel($result, $node->right, $level+1);
+    }
+
+    public function levelOrderWithBFS($root)
+    {
+        if (empty($root)) {
+            return [];
+        }
+        $result = [];
+        $queue = [];
+        array_unshift($queue, $root);
+
+        while (!empty($queue)) {
+            $current_node = array_pop($queue);
+            if (is_null($current_node)) {
+                continue;
+            }
+
+            array_push($result, $current_node->value);
+
+            array_unshift($queue, $current_node->left);
+            array_unshift($queue, $current_node->right);
+        }
+
+
+        return $result;
+    }
 }
 
 $root = new TreeNode(4);
@@ -82,6 +132,11 @@ $root->left = $node2;
 $root->right = $node3;
 
 $tree = new Tree();
-$invert = $tree->invertTree($root);
+/*$invert = $tree->invertTree($root);
+var_dump($invert);*/
 
-var_dump($invert);
+$level_tree = $tree->levelOrderWithDFS($root);
+//print_r($level_tree);
+
+$level_tree = $tree->levelOrderWithBFS($root);
+echo join('->', $level_tree);
