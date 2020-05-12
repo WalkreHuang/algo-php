@@ -71,7 +71,7 @@ class binaryTree
             array_unshift($stack, $node);
         }
 
-        //层次遍历
+        //层次遍历,队列实现
         /*while (!empty($stack)) {
             $current_node = array_shift($stack);
             if (is_null($current_node)) {
@@ -82,7 +82,7 @@ class binaryTree
             array_push($stack, $current_node->left);
             array_push($stack, $current_node->right);
         }*/
-
+        //栈实现
         while (!empty($stack)) {
             $current_node = array_shift($stack);
             if (is_null($current_node)) {
