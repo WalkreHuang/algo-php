@@ -112,6 +112,42 @@ class Tree
 
         return $result;
     }
+
+    public function getTreeDeep($node)
+    {
+/*        if (is_null($node)) {
+            return 0;
+        }
+
+        $left = $this->getTreeDeep($node->left);
+        $right = $this->getTreeDeep($node->right);
+
+        return max($left, $right)+1;*/
+
+        if (empty($node)) {
+            return 0;
+        }
+        $deep = 0;
+        $queue = [];
+        array_push($queue, $node);
+        while (!empty($queue)) {
+            $width = count($queue);//每层的结点数
+            $deep++;//每遍历一层，深度+1
+            for ($i=0;$i<$width;$i++) {
+                $current_node = array_shift($queue);
+
+                if (!is_null($current_node->left)) {
+                    array_push($queue, $current_node->left);
+                }
+                if (!is_null($current_node->right)) {
+                    array_push($queue, $current_node->right);
+                }
+            }
+        }
+
+        return $deep;
+    }
+
 }
 
 $root = new TreeNode(4);
@@ -139,4 +175,7 @@ $level_tree = $tree->levelOrderWithDFS($root);
 //print_r($level_tree);
 
 $level_tree = $tree->levelOrderWithBFS($root);
-echo join('->', $level_tree);
+echo join('->', $level_tree).PHP_EOL;
+
+$tree_deep = $tree->getTreeDeep($root);
+echo '树的深度为:'.$tree_deep.PHP_EOL;
