@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="add linkedlist">
+    <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/leetcode/threeNumSum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/twoNumSum.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist/LinkedList.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +50,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linkedlist/LinkedList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2436">
-              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+            <state relative-caret-position="-1322">
+              <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/threeNumSum.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/twoNumSum.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="e#6#102#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="1038" column="2" selection-start-line="1038" selection-start-column="2" selection-end-line="1038" selection-end-column="2" />
+            <state relative-caret-position="268">
+              <caret line="1012" column="9" selection-start-line="1012" selection-start-column="9" selection-end-line="1012" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -80,6 +102,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/linkedlist/LinkedListNode.php" />
         <option value="$PROJECT_DIR$/linkedlist/LinkedList.php" />
+        <option value="$PROJECT_DIR$/leetcode/twoNumSum.php" />
+        <option value="$PROJECT_DIR$/leetcode/threeNumSum.php" />
       </list>
     </option>
   </component>
@@ -108,12 +132,7 @@
             <path>
               <item name="algo-php" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo-php" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo-php" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -147,19 +166,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.LinkedList.php">
+  <component name="RunManager" selected="PHP Script.threeNumSum.php">
     <configuration name="LinkedList.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/linkedlist/LinkedList.php">
       <method v="2" />
     </configuration>
     <configuration name="debug" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/tree/simleTree.php">
       <method v="2" />
     </configuration>
+    <configuration name="threeNumSum.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/threeNumSum.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="twoNumSum.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/twoNumSum.php">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="PHP Script.debug" />
       <item itemvalue="PHP Script.LinkedList.php" />
+      <item itemvalue="PHP Script.twoNumSum.php" />
+      <item itemvalue="PHP Script.threeNumSum.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.threeNumSum.php" />
+        <item itemvalue="PHP Script.twoNumSum.php" />
         <item itemvalue="PHP Script.LinkedList.php" />
       </list>
     </recent_temporary>
@@ -176,7 +205,7 @@
       <updated>1589246460115</updated>
       <workItem from="1589246461438" duration="24258000" />
       <workItem from="1589286854518" duration="85000" />
-      <workItem from="1589333483852" duration="6314000" />
+      <workItem from="1589333483852" duration="12996000" />
     </task>
     <task id="LOCAL-00001" summary="compete tree bfs dfs">
       <created>1589251890680</created>
@@ -213,14 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589286880535</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add linkedlist method">
+      <created>1589351494950</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589351494950</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30657000" />
+    <option name="totallyTimeSpent" value="37339000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
@@ -231,7 +267,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5051784" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40391254" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48791716" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,7 +336,8 @@
     <MESSAGE value="add commit" />
     <MESSAGE value="add ignore file" />
     <MESSAGE value="add linkedlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add linkedlist" />
+    <MESSAGE value="add linkedlist method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add linkedlist method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -346,17 +383,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+    <entry file="file://$PROJECT_DIR$/linkedlist/LinkedList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="1038" column="2" selection-start-line="1038" selection-start-column="2" selection-end-line="1038" selection-end-column="2" />
+        <state relative-caret-position="-1322">
+          <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linkedlist/LinkedList.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2436">
-          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+        <state relative-caret-position="268">
+          <caret line="1012" column="9" selection-start-line="1012" selection-start-column="9" selection-end-line="1012" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoNumSum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/threeNumSum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>
     </entry>
