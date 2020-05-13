@@ -93,7 +93,18 @@ class LinkedList
 
     public function getNodeByIndex($index)
     {
+        $node = null;
+        if ($index > $this->length || $index <=0) {
+            return $node;
+        }
 
+        $curr_node = $this->head;
+        for ($i=0;$i<$index;$i++) {
+            $node = $curr_node->next;
+            $curr_node = $node;
+        }
+
+        return $node;
     }
 
     public function gerPreNode(linkedlistNode $node)
@@ -134,7 +145,6 @@ class LinkedList
         
     }
 }
-
 $list = new LinkedList();
 $node1 = $list->insert('a');
 $node2 = $list->insert('b');
@@ -143,7 +153,7 @@ $node4 = $list->insert('d');
 $node5 = $list->insert('e');
 $node6 = $list->insert('f');
 
-$linkedLists = $list->getLinkedList();
+/*$linkedLists = $list->getLinkedList();
 echo join(',', $linkedLists).PHP_EOL;
 
 $linkedLists = $list->getLinkedList();
@@ -152,4 +162,7 @@ echo join(',', $linkedLists).PHP_EOL;
 $list->delete($node5);
 
 $linkedLists = $list->getLinkedList();
-echo join(',', $linkedLists).PHP_EOL;
+echo join(',', $linkedLists).PHP_EOL;*/
+
+$current_node = $list->getNodeByIndex(6);
+var_dump($current_node);
