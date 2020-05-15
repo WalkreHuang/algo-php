@@ -7,7 +7,7 @@
  * Email: <huangwalker@qq.com>
  */
 
-require_once './DoubleLinkedNode.php';
+require_once __DIR__.'/./DoubleLinkedNode.php';
 class DoubleLinkedList
 {
     /**
@@ -62,9 +62,13 @@ class DoubleLinkedList
 
     public function delete(int $index)
     {
+        if ($this->length <= 0 || $index >= $this->length) {
+            return null;
+        }
+
         $del_node = $this->getNodeByIndex($index);
         if (is_null($del_node)) {
-            return false;
+            return null;
         }
 
         $pre_node = $del_node->prev;
@@ -76,10 +80,9 @@ class DoubleLinkedList
             $aft_node->prev = $del_node->prev;
         }
 
-        unset($del_node);
         $this->length--;
 
-        return true;
+        return $del_node;
     }
 
     public function getLists()
@@ -94,21 +97,15 @@ class DoubleLinkedList
 
         return $result;
     }
+
+    public function isEmpty()
+    {
+        return ($this->length == 0);
+    }
+
+    public function size()
+    {
+        return $this->length;
+    }
 }
 
-//初始链表：100->600->400->200->10
-$double_linked_list = new DoubleLinkedList();
-$double_linked_list->insert(10);
-$double_linked_list->insert(200);
-$double_linked_list->insert(400);
-$double_linked_list->insert(600);
-$double_linked_list->insert(100);
-
-
-$lists = $double_linked_list->getLists();
-echo join('->', $lists).PHP_EOL;
-
-$double_linked_list->delete(3);
-
-$lists = $double_linked_list->getLists();
-echo join('->', $lists).PHP_EOL;
