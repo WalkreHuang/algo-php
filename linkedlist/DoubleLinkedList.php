@@ -46,6 +46,20 @@ class DoubleLinkedList
         return $new_node;
     }
 
+    public function insertDataBeforeNode(DoubleLinkedNode $node, $data)
+    {
+        $new_node = new DoubleLinkedNode($data);
+        $pre_node = $node->prev;
+
+        $new_node->next = $node;
+        $node->prev = $new_node;
+
+        $pre_node->next = $new_node;
+        $new_node->prev = $pre_node;
+
+        return true;
+    }
+
     public function getNodeByIndex(int $index)
     {
         if ($this->length <= 0 || $index >= $this->length) {
