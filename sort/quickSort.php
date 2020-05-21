@@ -16,7 +16,7 @@ class quickSort
 
     public function help(&$arr, $low, $high)
     {
-        if ($high < $low) {
+        if ($high > $low) {
             //一次快排，返回排序后的基数下标
             $pivot = $this->patition($arr, $low, $high);
 
@@ -71,14 +71,27 @@ class quickSort
         $mid = $start;
         //一次遍历找出中值
         for ($i= $start+1;$i<=$end;$i++) {
-            if ($arr[$i] < $arr[$mid]) {
+            if ($arr[$i] <= $arr[$mid]) {
                 $mid++;
                 $tmp = $arr[$i];
                 $arr[$i] = $arr[$mid];
                 $arr[$mid] = $tmp;
             }
-            echo '一次遍历的数组结果：'.join('->', $arr).PHP_EOL;
         }
+        $tmp = $arr[$start];
+        $arr[$start] = $arr[$mid];
+        $arr[$mid] = $tmp;
+
+        $this->sort2($arr, $start, $mid-1);
+        $this->sort2($arr, $mid+1, $end);
+    }
+
+    public function sort3(&$arr, $start, $end)
+    {
+        if ($start >= $end) {
+            return;
+        }
+
 
     }
 }
