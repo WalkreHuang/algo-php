@@ -64,40 +64,38 @@ class quickSort
 
     public function sort2(&$arr, $start, $end)
     {
-        if ($start >= $end) {
-            return;
+        if ($start < $end) {
+            $pivot = $this->partition($arr, $start, $end);
+            $this->sort2($arr, $start, $pivot-1);
+            $this->sort2($arr, $pivot+1, $end);
         }
 
-        $mid = $start;
-        //一次遍历找出中值
-        for ($i= $start+1;$i<=$end;$i++) {
-            if ($arr[$i] <= $arr[$mid]) {
-                $mid++;
-                $tmp = $arr[$i];
-                $arr[$i] = $arr[$mid];
-                $arr[$mid] = $tmp;
-            }
-        }
-        $tmp = $arr[$start];
-        $arr[$start] = $arr[$mid];
-        $arr[$mid] = $tmp;
-
-        $this->sort2($arr, $start, $mid-1);
-        $this->sort2($arr, $mid+1, $end);
+        return $arr;
     }
 
-    public function sort3(&$arr, $start, $end)
+    public function partition(&$arr, $start, $end)
     {
-        if ($start >= $end) {
-            return;
+        //设立基准值
+        $pivot = $start;
+        $index = $pivot+1;
+
+        for ($i = $index;$i<= $end;$i++) {
+            if ($arr[$i] < $arr[$pivot]) {
+                if ($i != $index) {
+                    $this->swap($arr, $i, $index);
+                }
+                $index++;
+            }
+            //echo 'arr:'.join('->', $arr).PHP_EOL;
         }
 
-
+        $this->swap($arr, $pivot, $index-1);
+        return $index-1;
     }
 }
 
 $obj = new quickSort();
 
-$arr = [2,6,23,21,33,53,21];
-$obj->sort2($arr,0, count($arr)-1);
-//print_r($arr);
+$arr = [35,6,45,21,33,53,21];
+$sort = $obj->sort2($arr,0, count($arr)-1);
+print_r($sort);
