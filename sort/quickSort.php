@@ -27,6 +27,7 @@ class quickSort
         }
     }
 
+    //双指针完成分区，好理解
     public function patition(&$arr, $low, $high)
     {
         //选择第一个元素作为基准值
