@@ -19,7 +19,9 @@ class LRUCache {
     // int the max number of elements the cache supports
     private $capacity;
 
-    // Array representing a naive hashmap (TODO needs to pass the key through a hash function)
+    /**
+     * @var Node[]  Array representing a naive hashmap (TODO needs to pass the key through a hash function)
+     */
     private $hashmap;
 
     /**
@@ -68,8 +70,7 @@ class LRUCache {
             $this->detach($node);
             $this->attach($this->head, $node);
             $node->setData($data);
-        }
-        else {
+        } else {
             $node = new Node($key, $data);
             $this->hashmap[$key] = $node;
             $this->attach($this->head, $node);
@@ -117,6 +118,20 @@ class LRUCache {
     private function detach($node) {
         $node->getPrevious()->setNext($node->getNext());
         $node->getNext()->setPrevious($node->getPrevious());
+    }
+
+    public function getCache()
+    {
+        $result = [];
+
+        $node = $this->head->getNext();
+        while ($node != null) {
+            $result[] = $node->getData();
+
+            $node = $node->getNext();
+        }
+
+        return $result;
     }
 
 }
@@ -209,3 +224,15 @@ class Node {
     }
 
 }
+
+$lru = new LRUCache(3);
+$lru->put('a', 1);
+$lru->put('b', 2);
+$lru->put('c', 3);
+$lru->put('d', 4);
+$lru->put('e', 4);
+echo join('->', $lru->getCache()).PHP_EOL;
+
+$lru->get('c');
+$lru->get('a');
+echo join('->', $lru->getCache()).PHP_EOL;

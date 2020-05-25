@@ -47,7 +47,7 @@ class HashTable
      * @param $key
      * @param $value
      */
-    public function set($key, $value)
+    public function put($key, $value)
     {
         $hash_code = $this->getHashCode($key);
         if (isset($this->arr[$hash_code])) {
@@ -91,9 +91,9 @@ class HashTable
 
 $hash_table = new HashTable();
 
-$hash_table->set('343', 22);
-$hash_table->set('3432', 33);
-$hash_table->set('ffds', 55);
+$hash_table->put('343', 22);
+$hash_table->put('3432', 33);
+$hash_table->put('ffds', 55);
 
 echo $hash_table->get('343').PHP_EOL;
 echo $hash_table->get('3432').PHP_EOL;
