@@ -29,6 +29,21 @@ class LruCache
         //将节点添加至头部
         $this->list->addAsHead($key, $value);
     }
+
+    public function getCache()
+    {
+        $result = [];
+
+        $node = $this->list->head;
+
+        while ($node != null) {
+            $result[] = $node->value;
+
+            $node = $node->next;
+        }
+
+        return $result;
+    }
 }
 
 class HashList
@@ -69,13 +84,32 @@ class HashList
     //移除节点
     public function removeNode($key)
     {
-
+        $current=$this->head;
+        for($i=1;$i<$this->size;$i++){
+            if($current->key==$key) break;
+            $current=$current->next;
+        }
+        unset($this->buckets[$current->key]);
+        //调整指针
+        if($current->pre==null){
+            $current->next->pre=null;
+            $this->head=$current->next;
+        }else if($current->next ==null){
+            $current->pre->next=null;
+            $current=$current->pre;
+            $this->tail=$current;
+        }else{
+            $current->pre->next=$current->next;
+            $current->next->pre=$current->pre;
+            $current=null;
+        }
+        $this->size--;
     }
 
     //将新的节点添加到缓存的头部
-    /*public function addAsHead($key, $value)
+    public function addAsHead($key, $value)
     {
-        $node = new Node($value);
+        $node=new Node($value);
         if($this->tail==null && $this->head !=null){
             $this->tail=$this->head;
             $this->tail->next=null;
@@ -83,17 +117,28 @@ class HashList
         }
         $node->pre=null;
         $node->next=$this->head;
-        $this->head->pre=$node;
+        if ($this->head != null) {
+            $this->head->pre=$node;
+        }
         $this->head=$node;
         $node->key=$key;
         $this->buckets[$key]=$node;
         $this->size++;
-    }*/
+    }
 
 
-    private function moveToHead(Node $res)
+    private function moveToHead(Node $node)
     {
-
+        if($node === $this->head) return ;
+        //调整前后指针指向
+        $node->pre->next=$node->next;
+        if ($node->next != null) {
+            $node->next->pre=$node->pre;
+        }
+        $node->next=$this->head;
+        $this->head->pre=$node;
+        $this->head=$node;
+        $node->pre=null;
     }
 }
 
@@ -117,5 +162,15 @@ class Node
 }
 
 $obj = new LrUCache(5);
-$obj->put('aab', 2333);
-$res = $obj->get('aab');
+$obj->put('aaa', 11);
+$obj->put('aab', 22);
+$obj->put('aac', 33);
+$obj->put('aaa', 44);
+
+$cache = $obj->getCache();
+var_dump($cache);
+echo PHP_EOL;
+$obj->get('aab');
+$obj->get('aac');
+$cache = $obj->getCache();
+var_dump($cache);
