@@ -71,7 +71,7 @@ class binaryTree
             array_unshift($stack, $node);
         }
 
-        //层次遍历,队列实现
+        //层次遍历(广度优先遍历),队列实现
         /*while (!empty($stack)) {
             $current_node = array_shift($stack);
             if (is_null($current_node)) {
@@ -255,6 +255,7 @@ $tree->insert(60);
 $tree->insert(68);
 $tree->insert(9);
 
+//非递归的遍历都是借助栈来实现的（实际上，递归也就是系统模拟了栈来调用）
 $trees = $tree->preOrder($tree->root);
 echo join('->', $trees).PHP_EOL;
 
