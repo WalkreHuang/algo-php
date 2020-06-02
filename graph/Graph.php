@@ -3,6 +3,9 @@
 
 class Node {
     public $val = null;
+    /**
+     * @var Node[]
+     */
     public $arrNext = [];//存储下个节点位置的数组
 
     public function __construct($val = null)
