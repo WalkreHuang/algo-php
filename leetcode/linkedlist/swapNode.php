@@ -32,13 +32,18 @@ class Solution {
             return $head;
         }
 
-        $next = $head->next;
-        $next->next = $this->swapPairs($next->next);
+        $node = new ListNode(0);
+        $res = $node;
+        while ($head != null && $head->next != null) {
+            $node->next = $head->next;
+            $head->next = $head->next->next;
+            $node->next->next = $head;
 
-        $head->next = $next->next;
-        $next->next = $head;
+            $node = $node->next->next;
+            $head = $head->next;
+        }
 
-        return $next;
+        return $res->next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
