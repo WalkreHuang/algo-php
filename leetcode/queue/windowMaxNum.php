@@ -17,30 +17,41 @@ class windowMaxNum
      */
     public function maxSlidingWindow($nums, $k)
     {
-        $window = [];
-        $res = [];
+        //异常值判断
+        if(count($nums)<1) return $nums;
 
-        for ($i=0;$i<count($nums);$i++) {
-            //当前窗口元素的个数是否达到k个
-            if (!empty($window) && $k <= $i - $window[0]) {
-                array_shift($window);
+        //队列存储对应数的下标index
+        $dequeue = [];
+
+        //结果输出
+        $result = [];
+
+        //queue 只存数组下标
+
+        for($i=0;$i<count($nums);$i++){
+            //如果队列有值(值都是下标)，并且队尾的元素小于等于当前遍历到的元素，就把队尾元素出队，直至队尾元素大于当前元素停止
+            while (!empty($dequeue) && $nums[end($dequeue)]<=$nums[$i]){
+                array_pop($dequeue);
             }
 
-            //保持数组最左边的元素始终是最大值
-            while (!empty($window) && $nums[end($window)] <= $nums[$i]) {
-                array_shift($window);
+            //向队尾添加元素(值下标)
+            $dequeue[] = $i;
+
+            //print_r($dequeue);
+
+            //如果队首(队列最大的元素)的下标小于当前窗口的左边界，说明队首元素是无效的，需要把队首元素出队
+            //简单的数组，下标永远是0开始，这里不是键值对，注意
+            if($dequeue[0] < $i+1-$k){
+                array_shift($dequeue);
             }
 
-            //将当前遍历的元素下标放入窗口
-            array_push($window, $i);
-
-            //判断循环是否达到了k次
-            if ($i >= $k-1) {
-                $res[] = $nums[$window[0]];
+            //如果窗口已经形成，就把窗口最大的元素(队首)放入结果集
+            if($i+1>=$k){
+                $result[] = $nums[$dequeue[0]];
             }
         }
 
-        return $res;
+        return $result;
     }
 }
 
