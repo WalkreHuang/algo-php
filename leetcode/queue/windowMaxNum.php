@@ -21,18 +21,20 @@ class windowMaxNum
         $res = [];
 
         for ($i=0;$i<count($nums);$i++) {
-            if (!empty($window)) {
-                if ($i - $window[0] >= $k) {
-                    array_shift($window);
-                }
+            //当前窗口元素的个数是否达到k个
+            if (!empty($window) && $k <= $i - $window[0]) {
+                array_shift($window);
             }
 
+            //保持数组最左边的元素始终是最大值
             while (!empty($window) && $nums[end($window)] <= $nums[$i]) {
-                array_pop($window);
+                array_shift($window);
             }
 
-            $window[] = $i;
+            //将当前遍历的元素下标放入窗口
+            array_push($window, $i);
 
+            //判断循环是否达到了k次
             if ($i >= $k-1) {
                 $res[] = $nums[$window[0]];
             }
