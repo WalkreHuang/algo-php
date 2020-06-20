@@ -50,6 +50,12 @@ class Solution {
      * @return Boolean
      */
     function isValidBST($root) {
+//        return $this->solutionWithRecursive1($root);
+        return $this->solutionWithRecursive2($root);
+    }
+    
+    private function solutionWithRecursive1($root)
+    {
         if ($root == null) {
             return true;
         }
@@ -69,6 +75,27 @@ class Solution {
 
         return $left && $right;
     }
+
+    private function solutionWithRecursive2($root)
+    {
+        return $this->help($root, PHP_INT_MIN, PHP_INT_MAX);
+    }
+
+    private function help($root, $min, $max)
+    {
+        if ($root == null) {
+            return true;
+        }
+
+        if ($root->val <= $min || $root->val >= $max) {
+            return false;
+        }
+
+        $left = $this->help($root->left, $min, $root->val);
+        $right = $this->help($root->right, $root->val, $max);
+
+        return $left && $right;
+    }
 }
 class TreeNode {
      public $val = null;
@@ -79,7 +106,7 @@ class TreeNode {
 //leetcode submit region end(Prohibit modification and deletion)
 $root = new TreeNode(5);
 $node1 = new TreeNode(1);
-$node2 = new TreeNode(4);
+$node2 = new TreeNode(8);
 $node3 = new TreeNode(3);
 $node4 = new TreeNode(6);
 
@@ -88,6 +115,6 @@ $root->right = $node2;
 $node2->left = $node3;
 $node2->right = $node4;
 
-$root = new TreeNode(0);
+//$root = new TreeNode(0);
 $obj = new Solution();
 var_dump($obj->isValidBST($root));
