@@ -222,6 +222,30 @@ class binaryTree
         return $result;
     }
 
+    public function seqLevelOrder($node)
+    {
+        if (is_null($node)) {
+            return [];
+        }
+
+        $queue[] = $node;
+
+        $ret = [];
+        while (!empty($queue)) {
+            $cur_node = array_shift($queue);
+
+            $ret[] = $cur_node->val;
+
+            if (!is_null($cur_node->left)) {
+                $queue[] = $cur_node->left;
+            }
+            if (!is_null($cur_node->right)) {
+                $queue[] = $cur_node->right;
+            }
+        }
+
+        return $ret;
+    }
 }
 
 class TreeNode

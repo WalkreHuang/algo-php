@@ -98,5 +98,5 @@ class quickSort
 $obj = new quickSort();
 
 $arr = [35,6,45,21,33,53,21];
-$sort = $obj->sort2($arr,0, count($arr)-1);
-print_r($sort);
+$obj->sort($arr);
+print_r($arr);
