@@ -6,7 +6,7 @@ class halfFind
     public function findEqual($arr, $value)
     {
         $low = 0;
-        $high = count($arr);
+        $high = count($arr) - 1;
         while ($low <= $high) {
             $mid = floor($low + ($high-$low)/2);
 
@@ -25,7 +25,7 @@ class halfFind
     public function findFirstEqElement($arr, $value)
     {
         $low = 0;
-        $high = count($arr);
+        $high = count($arr) - 1;
         while ($low <= $high) {
             $mid = floor($low + ($high-$low)/2);
             if ($arr[$mid] == $value) {
@@ -48,7 +48,7 @@ class halfFind
     public function findLastEqElement($arr, $value)
     {
         $low = 0;
-        $high = count($arr);
+        $high = count($arr) - 1;
         $len = count($arr);
         while ($low <= $high) {
             $mid = floor($low + ($high-$low)/2);
@@ -72,7 +72,7 @@ class halfFind
     public function findFirstGteElement($arr, $value)
     {
         $low = 0;
-        $high = count($arr);
+        $high = count($arr) - 1;
         while ($low <= $high) {
             $mid = floor($low + ($high-$low)/2);
             if ($arr[$mid] >= $value) {
@@ -96,6 +96,6 @@ $obj = new halfFind();
 $arr = [1,2,3,6,7,8,9,10,10,11,12];
 
 echo $obj->findEqual($arr, 10).PHP_EOL;
-echo $obj->findFirstEqElement($arr, 10).PHP_EOL;
-echo $obj->findLastEqElement($arr, 10).PHP_EOL;
-echo $obj->findFirstGteElement($arr, 5).PHP_EOL;
+//echo $obj->findFirstEqElement($arr, 10).PHP_EOL;
+//echo $obj->findLastEqElement($arr, 10).PHP_EOL;
+//echo $obj->findFirstGteElement($arr, 5).PHP_EOL;

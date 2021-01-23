@@ -1,195 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/threeNumSum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/twoNumSum.php" afterDir="false" />
+    <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="added algo">
+      <change afterPath="$PROJECT_DIR$/leetcode/tree/levelOrder2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find/halfFind.php" beforeDir="false" afterPath="$PROJECT_DIR$/find/halfFind.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tree/simleTree.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3052">
-              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tree/binaryTree.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linkedlist/LinkedListNode.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linkedlist/LinkedList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1322">
-              <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leetcode/threeNumSum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode/twoNumSum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="e#6#102#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="1012" column="9" selection-start-line="1012" selection-start-column="9" selection-end-line="1012" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/tree/simleTree.php" />
-        <option value="$PROJECT_DIR$/tree/binaryTree.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/linkedlist/LinkedListNode.php" />
-        <option value="$PROJECT_DIR$/linkedlist/LinkedList.php" />
-        <option value="$PROJECT_DIR$/leetcode/twoNumSum.php" />
-        <option value="$PROJECT_DIR$/leetcode/threeNumSum.php" />
-      </list>
-    </option>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="PhpDebugGeneral" xdebug_debug_port="9008" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectId" id="1g1MJyCplnOD6jYSt3DOZuhmUX0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="algo-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo-php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo-php" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../algo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="zielu.svntoolbox.prj.config" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\project\algo-php" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="PHP Script.threeNumSum.php">
-    <configuration name="LinkedList.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/linkedlist/LinkedList.php">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHP Script.halfFind.php">
     <configuration name="debug" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/tree/simleTree.php">
       <method v="2" />
     </configuration>
-    <configuration name="threeNumSum.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/threeNumSum.php">
+    <configuration name="exchange.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/array/exchange.php">
       <method v="2" />
     </configuration>
-    <configuration name="twoNumSum.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/twoNumSum.php">
+    <configuration name="halfFind.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/find/halfFind.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="optimizeQuickSort.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/practices/sort/optimizeQuickSort.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="quickSort.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sort/quickSort.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="quickSort.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/practices/sort/quickSort.php">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHP Script.debug" />
-      <item itemvalue="PHP Script.LinkedList.php" />
-      <item itemvalue="PHP Script.twoNumSum.php" />
-      <item itemvalue="PHP Script.threeNumSum.php" />
+      <item itemvalue="PHP Script.exchange.php" />
+      <item itemvalue="PHP Script.quickSort.php" />
+      <item itemvalue="PHP Script.quickSort.php (1)" />
+      <item itemvalue="PHP Script.optimizeQuickSort.php" />
+      <item itemvalue="PHP Script.halfFind.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.threeNumSum.php" />
-        <item itemvalue="PHP Script.twoNumSum.php" />
-        <item itemvalue="PHP Script.LinkedList.php" />
+        <item itemvalue="PHP Script.halfFind.php" />
+        <item itemvalue="PHP Script.optimizeQuickSort.php" />
+        <item itemvalue="PHP Script.quickSort.php" />
+        <item itemvalue="PHP Script.exchange.php" />
+        <item itemvalue="PHP Script.quickSort.php (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +101,46 @@
       <workItem from="1589246461438" duration="24258000" />
       <workItem from="1589286854518" duration="85000" />
       <workItem from="1589333483852" duration="12996000" />
+      <workItem from="1597277581925" duration="1154000" />
+      <workItem from="1597319938539" duration="683000" />
+      <workItem from="1597453882419" duration="598000" />
+      <workItem from="1597499952778" duration="1068000" />
+      <workItem from="1597538402487" duration="14772000" />
+      <workItem from="1597624211413" duration="128000" />
+      <workItem from="1597675050261" duration="37000" />
+      <workItem from="1597847009781" duration="657000" />
+      <workItem from="1597882250541" duration="591000" />
+      <workItem from="1597925065582" duration="589000" />
+      <workItem from="1598060314297" duration="1154000" />
+      <workItem from="1598106730606" duration="598000" />
+      <workItem from="1598144646159" duration="1167000" />
+      <workItem from="1598227824337" duration="550000" />
+      <workItem from="1598271267731" duration="771000" />
+      <workItem from="1598313835464" duration="906000" />
+      <workItem from="1598366368560" duration="597000" />
+      <workItem from="1598400542850" duration="569000" />
+      <workItem from="1598452123510" duration="589000" />
+      <workItem from="1598486508266" duration="523000" />
+      <workItem from="1598760682058" duration="3139000" />
+      <workItem from="1599276416911" duration="597000" />
+      <workItem from="1600586975694" duration="1736000" />
+      <workItem from="1601096040442" duration="929000" />
+      <workItem from="1601540768421" duration="8000" />
+      <workItem from="1603005009782" duration="4667000" />
+      <workItem from="1603502508205" duration="69000" />
+      <workItem from="1603601355826" duration="3655000" />
+      <workItem from="1604116204497" duration="969000" />
+      <workItem from="1604117283780" duration="8676000" />
+      <workItem from="1604196018422" duration="8530000" />
+      <workItem from="1607154949739" duration="2614000" />
+      <workItem from="1607223469938" duration="26000" />
+      <workItem from="1607223526155" duration="5180000" />
+      <workItem from="1608444054628" duration="644000" />
+      <workItem from="1609415467197" duration="44000" />
+      <workItem from="1609415603019" duration="595000" />
+      <workItem from="1610264563427" duration="117000" />
+      <workItem from="1611377731894" duration="315000" />
+      <workItem from="1611387405221" duration="2616000" />
     </task>
     <task id="LOCAL-00001" summary="compete tree bfs dfs">
       <created>1589251890680</created>
@@ -249,42 +184,36 @@
       <option name="project" value="LOCAL" />
       <updated>1589351494950</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added binary search algo">
+      <created>1597278693759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597278693759</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added pointer algo">
+      <created>1597579994883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597579994883</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added pointer algo">
+      <created>1597587959096</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597587959096</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added algo">
+      <created>1607245417431</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607245417431</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37339000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="2" />
-      <window_info id="Project Explorer" order="3" />
-      <window_info id="Job Explorer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40391254" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.48791716" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Console" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5201381" />
-      <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.56041425" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32911393" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -294,22 +223,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -328,6 +242,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -337,82 +252,63 @@
     <MESSAGE value="add ignore file" />
     <MESSAGE value="add linkedlist" />
     <MESSAGE value="add linkedlist method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add linkedlist method" />
+    <MESSAGE value="added binary search algo" />
+    <MESSAGE value="added pointer algo" />
+    <MESSAGE value="added algo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added algo" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree/simleTree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3052">
-          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree/binaryTree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linkedlist/LinkedListNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linkedlist/LinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1322">
-          <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="1012" column="9" selection-start-line="1012" selection-start-column="9" selection-end-line="1012" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/twoNumSum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#6#102#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/threeNumSum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1735" height="279" key="GridCell.Tab.0.bottom" timestamp="1611388085816">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085816" />
+    <state width="1735" height="279" key="GridCell.Tab.0.center" timestamp="1611388085815">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="279" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085815" />
+    <state width="1735" height="279" key="GridCell.Tab.0.left" timestamp="1611388085814">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="279" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085814" />
+    <state width="1735" height="279" key="GridCell.Tab.0.right" timestamp="1611388085815">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="279" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085815" />
+    <state width="1735" height="339" key="GridCell.Tab.1.bottom" timestamp="1611387621927">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="339" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621927" />
+    <state width="1735" height="339" key="GridCell.Tab.1.center" timestamp="1611387621926">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="339" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
+    <state width="1735" height="339" key="GridCell.Tab.1.left" timestamp="1611387621926">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="339" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
+    <state width="1735" height="339" key="GridCell.Tab.1.right" timestamp="1611387621926">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1735" height="339" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
+    <state x="581" y="230" key="NewPhpClassDialog" timestamp="1607245438668">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="581" y="230" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1607245438668" />
+    <state x="678" y="475" key="NewPhpFileDialog" timestamp="1603614080768">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="678" y="475" key="NewPhpFileDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603614080768" />
+    <state x="325" y="123" key="SettingsEditor" timestamp="1604116492265">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="325" y="123" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1604116492265" />
+    <state width="625" height="500" key="SwitcherDM" timestamp="1607252129530">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="625" height="500" key="SwitcherDM/0.23.1792.1097@0.23.1792.1097" timestamp="1607252129530" />
+    <state x="477" y="88" width="838" height="1032" key="search.everywhere.popup" timestamp="1604197297861">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="477" y="88" width="838" height="1032" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1604197297861" />
   </component>
 </project>
