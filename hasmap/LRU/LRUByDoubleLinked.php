@@ -1,5 +1,6 @@
 <?php
 
+//在本例中最近访问的元素位于链表头部
 /**
  * Class that implements the concept of an LRU Cache
  * using an associative array as a naive hashmap, and a doubly linked list
@@ -234,5 +235,6 @@ $lru->put('e', 4);
 echo join('->', $lru->getCache()).PHP_EOL;
 
 $lru->get('c');
-$lru->get('a');
+$lru->get('a');//不存在的元素不会影响缓存中的顺序
+$lru->get('e');
 echo join('->', $lru->getCache()).PHP_EOL;

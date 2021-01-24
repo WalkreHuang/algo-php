@@ -6,10 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="added algo">
-      <change afterPath="$PROJECT_DIR$/leetcode/tree/levelOrder2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find/halfFind.php" beforeDir="false" afterPath="$PROJECT_DIR$/find/halfFind.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hasmap/LRU/LRUByArr.php" beforeDir="false" afterPath="$PROJECT_DIR$/hasmap/LRU/LRUByArr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hasmap/LRU/LRUByDoubleLinked.php" beforeDir="false" afterPath="$PROJECT_DIR$/hasmap/LRU/LRUByDoubleLinked.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +40,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hasmap/LRU" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="zielu.svntoolbox.prj.config" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hasmap/LRU" />
       <recent name="C:\project\algo-php" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.halfFind.php">
-    <configuration name="debug" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/tree/simleTree.php">
+  <component name="RunManager" selected="PHP Script.LRUByDoubleLinked.php">
+    <configuration name="LRUByArr.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/hasmap/LRU/LRUByArr.php">
       <method v="2" />
     </configuration>
-    <configuration name="exchange.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/leetcode/array/exchange.php">
+    <configuration name="LRUByDoubleLinked.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/hasmap/LRU/LRUByDoubleLinked.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="debug" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/tree/simleTree.php">
       <method v="2" />
     </configuration>
     <configuration name="halfFind.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/find/halfFind.php">
@@ -64,27 +67,24 @@
     <configuration name="optimizeQuickSort.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/practices/sort/optimizeQuickSort.php">
       <method v="2" />
     </configuration>
-    <configuration name="quickSort.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sort/quickSort.php">
-      <method v="2" />
-    </configuration>
     <configuration name="quickSort.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/practices/sort/quickSort.php">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHP Script.debug" />
-      <item itemvalue="PHP Script.exchange.php" />
       <item itemvalue="PHP Script.quickSort.php" />
-      <item itemvalue="PHP Script.quickSort.php (1)" />
       <item itemvalue="PHP Script.optimizeQuickSort.php" />
       <item itemvalue="PHP Script.halfFind.php" />
+      <item itemvalue="PHP Script.LRUByArr.php" />
+      <item itemvalue="PHP Script.LRUByDoubleLinked.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.LRUByDoubleLinked.php" />
+        <item itemvalue="PHP Script.LRUByArr.php" />
         <item itemvalue="PHP Script.halfFind.php" />
         <item itemvalue="PHP Script.optimizeQuickSort.php" />
         <item itemvalue="PHP Script.quickSort.php" />
-        <item itemvalue="PHP Script.exchange.php" />
-        <item itemvalue="PHP Script.quickSort.php (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +140,8 @@
       <workItem from="1609415603019" duration="595000" />
       <workItem from="1610264563427" duration="117000" />
       <workItem from="1611377731894" duration="315000" />
-      <workItem from="1611387405221" duration="2616000" />
+      <workItem from="1611387405221" duration="2995000" />
+      <workItem from="1611450092659" duration="14220000" />
     </task>
     <task id="LOCAL-00001" summary="compete tree bfs dfs">
       <created>1589251890680</created>
@@ -258,38 +259,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="added algo" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1735" height="279" key="GridCell.Tab.0.bottom" timestamp="1611388085816">
+    <state width="1735" height="488" key="GridCell.Tab.0.bottom" timestamp="1611464079969">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085816" />
-    <state width="1735" height="279" key="GridCell.Tab.0.center" timestamp="1611388085815">
+    <state width="1735" height="488" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
+    <state width="1735" height="488" key="GridCell.Tab.0.center" timestamp="1611464079969">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="279" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085815" />
-    <state width="1735" height="279" key="GridCell.Tab.0.left" timestamp="1611388085814">
+    <state width="1735" height="488" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
+    <state width="1735" height="488" key="GridCell.Tab.0.left" timestamp="1611464079968">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="279" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085814" />
-    <state width="1735" height="279" key="GridCell.Tab.0.right" timestamp="1611388085815">
+    <state width="1735" height="488" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079968" />
+    <state width="1735" height="488" key="GridCell.Tab.0.right" timestamp="1611464079969">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="279" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611388085815" />
-    <state width="1735" height="339" key="GridCell.Tab.1.bottom" timestamp="1611387621927">
+    <state width="1735" height="488" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
+    <state width="1735" height="339" key="GridCell.Tab.1.bottom" timestamp="1611393501509">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="339" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621927" />
-    <state width="1735" height="339" key="GridCell.Tab.1.center" timestamp="1611387621926">
+    <state width="1735" height="339" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611393501509" />
+    <state width="1735" height="339" key="GridCell.Tab.1.center" timestamp="1611393501508">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="339" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
-    <state width="1735" height="339" key="GridCell.Tab.1.left" timestamp="1611387621926">
+    <state width="1735" height="339" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611393501508" />
+    <state width="1735" height="339" key="GridCell.Tab.1.left" timestamp="1611393501508">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="339" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
-    <state width="1735" height="339" key="GridCell.Tab.1.right" timestamp="1611387621926">
+    <state width="1735" height="339" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611393501508" />
+    <state width="1735" height="339" key="GridCell.Tab.1.right" timestamp="1611393501508">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="339" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611387621926" />
+    <state width="1735" height="339" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611393501508" />
     <state x="581" y="230" key="NewPhpClassDialog" timestamp="1607245438668">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -302,10 +303,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="325" y="123" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1604116492265" />
-    <state width="625" height="500" key="SwitcherDM" timestamp="1607252129530">
+    <state width="625" height="500" key="SwitcherDM" timestamp="1611457490063">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="625" height="500" key="SwitcherDM/0.23.1792.1097@0.23.1792.1097" timestamp="1607252129530" />
+    <state width="625" height="500" key="SwitcherDM/0.23.1792.1097@0.23.1792.1097" timestamp="1611457490063" />
     <state x="477" y="88" width="838" height="1032" key="search.everywhere.popup" timestamp="1604197297861">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
