@@ -6,9 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fbe27d2-0dd6-42b6-8198-ba940a5455dc" name="Default Changelist" comment="added algo">
+      <change afterPath="$PROJECT_DIR$/leetcode/linkedlist/getBottomNodeVal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hasmap/LRU/LRUByArr.php" beforeDir="false" afterPath="$PROJECT_DIR$/hasmap/LRU/LRUByArr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hasmap/LRU/LRUByDoubleLinked.php" beforeDir="false" afterPath="$PROJECT_DIR$/hasmap/LRU/LRUByDoubleLinked.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/linkedlist/checkCircle.php" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/linkedlist/checkCircle.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,10 @@
       <workItem from="1610264563427" duration="117000" />
       <workItem from="1611377731894" duration="315000" />
       <workItem from="1611387405221" duration="2995000" />
-      <workItem from="1611450092659" duration="14220000" />
+      <workItem from="1611450092659" duration="14221000" />
+      <workItem from="1611533416426" duration="957000" />
+      <workItem from="1611578202331" duration="3211000" />
+      <workItem from="1611620420345" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="compete tree bfs dfs">
       <created>1589251890680</created>
@@ -259,22 +262,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="added algo" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1735" height="488" key="GridCell.Tab.0.bottom" timestamp="1611464079969">
+    <state width="1735" height="488" key="GridCell.Tab.0.bottom" timestamp="1611499790250">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="488" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
-    <state width="1735" height="488" key="GridCell.Tab.0.center" timestamp="1611464079969">
+    <state width="1735" height="488" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1611499790250" />
+    <state width="1735" height="488" key="GridCell.Tab.0.center" timestamp="1611499790250">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="488" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
-    <state width="1735" height="488" key="GridCell.Tab.0.left" timestamp="1611464079968">
+    <state width="1735" height="488" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1611499790250" />
+    <state width="1735" height="488" key="GridCell.Tab.0.left" timestamp="1611499790249">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="488" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079968" />
-    <state width="1735" height="488" key="GridCell.Tab.0.right" timestamp="1611464079969">
+    <state width="1735" height="488" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1611499790249" />
+    <state width="1735" height="488" key="GridCell.Tab.0.right" timestamp="1611499790250">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1735" height="488" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611464079969" />
+    <state width="1735" height="488" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611499790250" />
     <state width="1735" height="339" key="GridCell.Tab.1.bottom" timestamp="1611393501509">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -291,10 +294,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1735" height="339" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1611393501508" />
-    <state x="581" y="230" key="NewPhpClassDialog" timestamp="1607245438668">
+    <state x="581" y="229" key="NewPhpClassDialog" timestamp="1611581514207">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="581" y="230" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1607245438668" />
+    <state x="581" y="229" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1611581514207" />
     <state x="678" y="475" key="NewPhpFileDialog" timestamp="1603614080768">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>

@@ -1,4 +1,5 @@
 <?php
+//https://leetcode-cn.com/problems/linked-list-cycle/solution/yi-wen-gao-ding-chang-jian-de-lian-biao-wen-ti-h-2/
 //给定一个链表，判断链表中是否有环。
 //
 // 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。
@@ -56,12 +57,9 @@ class Solution {
      * @return Boolean
      */
     function hasCycle($head) {
-        $slow = $fast = $head;
-        while ($fast != null) {
-            if ($fast->next == null) {
-                return false;
-            }
+        $fast = $slow = $head;
 
+        while(!is_null($fast->next) && !is_null($slow)) {
             $fast = $fast->next->next;
             $slow = $slow->next;
 
@@ -69,6 +67,7 @@ class Solution {
                 return true;
             }
         }
+
         return false;
     }
 }
