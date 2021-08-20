@@ -16,34 +16,41 @@ class backspaceStringCompare
 {
     /**
      * @param String $s
-     * @param integer $k
+     * @param String $t
      * @return String
      */
-    public static function run($s, $k)
+    public static function run($s, $t)
     {
+        $s_re_build = self::buildStr($s);
+        $t_re_build = self::buildStr($t);
+
+        return $s_re_build === $t_re_build;
+    }
+
+    private static function buildStr($s)
+    {
+        $stack = new SplStack();
         $len = strlen($s);
-        for ($i = 0;$i < $len; $i += 2*$k) {
-            $l = $i;
-            $r = $l + $k - 1;
-            //剩余字符少于 k 个的情况
-            if (!isset($s[$r])) {
-                $r = $len - 1;
+
+        for ($i=0;$i<$len;$i++) {
+            if (!$stack->isEmpty() && $s[$i] === '#') {
+                $stack->pop();
             }
 
-            //反转字符串
-            while ($l < $r) {
-                $tmp = $s[$l];
-                $s[$l] = $s[$r];
-                $s[$r] = $tmp;
-                $l++;
-                $r--;
+            if ($s[$i] !== '#') {
+                $stack->push($s[$i]);
             }
         }
 
-        return $s;
+        $new_s = '';
+        while (!$stack->isEmpty()) {
+            $new_s .= $stack->pop();
+        }
+        return $new_s;
     }
 
 }
 
-$str = 'abcdefg';
-echo reverseWordInStr::run($str, 2).PHP_EOL;
+$S = "a#c";
+$T = "d";
+$ret = backspaceStringCompare::run($S, $T);
