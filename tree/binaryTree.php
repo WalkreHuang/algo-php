@@ -65,6 +65,20 @@ class binaryTree
 
     public function iteratorOrder1(&$result, $node)
     {
+        /*$stack = new SplStack();
+        $stack->push($node);
+        while (!$stack->isEmpty()) {
+            $cur_node = $stack->pop();
+            if (is_null($cur_node)) {
+                continue;
+            }
+            $result[] = $cur_node->value;
+
+            $stack->push($cur_node->right);
+            $stack->push($cur_node->left);
+        }
+        return;*/
+
         $stack = [];
 
         if (!is_null($node)) {
@@ -186,6 +200,19 @@ class binaryTree
 
     public function iteratorOrder4(&$result, $node)
     {
+        /*$queue = new SplQueue();
+        $queue->push($node);
+        while (!$queue->isEmpty()) {
+            $cur_node = $queue->shift();
+            if (is_null($cur_node)) {
+                continue;
+            }
+            $result[] = $cur_node->value;
+            $queue->push($cur_node->left);
+            $queue->push($cur_node->right);
+        }*/
+//        return;
+
         $queue = [];
         if (!is_null($node)) {
             array_unshift($queue, $node);
